@@ -72,6 +72,15 @@ class ViewController: UIViewController {
     
     @objc func escape() {
         keypressLabel.text = "Escape"
+        // Launch WunderLINQ app when Escape is pressed
+        guard let url = URL(string: "wunderlinq://") else {
+            return
+        }
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
     }
     
     @objc func enter() {
