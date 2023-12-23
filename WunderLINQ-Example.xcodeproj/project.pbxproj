@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D80366152B3790B500F48637 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80366132B3790B500F48637 /* SoundManager.swift */; };
+		D803661D2B3792D000F48637 /* directional.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D803661B2B3792D000F48637 /* directional.mp3 */; };
+		D803661E2B3792D000F48637 /* enter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D803661C2B3792D000F48637 /* enter.mp3 */; };
 		D86D486C2A2AE34C0062F7A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D486B2A2AE34C0062F7A0 /* AppDelegate.swift */; };
 		D86D486E2A2AE34C0062F7A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D486D2A2AE34C0062F7A0 /* SceneDelegate.swift */; };
 		D86D48702A2AE34C0062F7A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86D486F2A2AE34C0062F7A0 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D80366132B3790B500F48637 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		D803661B2B3792D000F48637 /* directional.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = directional.mp3; path = "WunderLINQ-Example/mp3-bak/directional.mp3"; sourceTree = SOURCE_ROOT; };
+		D803661C2B3792D000F48637 /* enter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = enter.mp3; path = "WunderLINQ-Example/mp3-bak/enter.mp3"; sourceTree = SOURCE_ROOT; };
 		D86D48682A2AE34C0062F7A0 /* WunderLINQ-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WunderLINQ-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86D486B2A2AE34C0062F7A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D86D486D2A2AE34C0062F7A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D803661A2B3792BA00F48637 /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				D803661B2B3792D000F48637 /* directional.mp3 */,
+				D803661C2B3792D000F48637 /* enter.mp3 */,
+			);
+			path = mp3;
+			sourceTree = "<group>";
+		};
 		D86D485F2A2AE34C0062F7A0 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +71,8 @@
 		D86D486A2A2AE34C0062F7A0 /* WunderLINQ-Example */ = {
 			isa = PBXGroup;
 			children = (
+				D803661A2B3792BA00F48637 /* mp3 */,
+				D80366132B3790B500F48637 /* SoundManager.swift */,
 				D86D486B2A2AE34C0062F7A0 /* AppDelegate.swift */,
 				D86D486D2A2AE34C0062F7A0 /* SceneDelegate.swift */,
 				D86D486F2A2AE34C0062F7A0 /* ViewController.swift */,
@@ -126,8 +143,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D86D48782A2AE34D0062F7A0 /* LaunchScreen.storyboard in Resources */,
+				D803661E2B3792D000F48637 /* enter.mp3 in Resources */,
 				D86D48752A2AE34D0062F7A0 /* Assets.xcassets in Resources */,
 				D86D48732A2AE34C0062F7A0 /* Main.storyboard in Resources */,
+				D803661D2B3792D000F48637 /* directional.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D86D48702A2AE34C0062F7A0 /* ViewController.swift in Sources */,
+				D80366152B3790B500F48637 /* SoundManager.swift in Sources */,
 				D86D486C2A2AE34C0062F7A0 /* AppDelegate.swift in Sources */,
 				D86D486E2A2AE34C0062F7A0 /* SceneDelegate.swift in Sources */,
 			);

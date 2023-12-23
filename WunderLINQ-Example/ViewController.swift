@@ -47,30 +47,37 @@ class ViewController: UIViewController {
     }
     
     @objc func leftArrow() {
+        SoundManager().playSoundEffect("directional")
         keypressLabel.text = "Left Arrow"
     }
     
     @objc func rightArrow() {
+        SoundManager().playSoundEffect("directional")
         keypressLabel.text = "Right Arrow"
     }
     
     @objc func upArrow() {
+        SoundManager().playSoundEffect("directional")
         keypressLabel.text = "Up Arrow"
     }
     
     @objc func downArrow() {
+        SoundManager().playSoundEffect("directional")
         keypressLabel.text = "Down Arrow"
     }
     
     @objc func addition() {
+        SoundManager().playSoundEffect("directional")
         keypressLabel.text = "+"
     }
     
     @objc func minus() {
+        SoundManager().playSoundEffect("directional")
         keypressLabel.text = "-"
     }
     
     @objc func escape() {
+        SoundManager().playSoundEffect("enter")
         keypressLabel.text = "Escape"
         // Launch WunderLINQ app when Escape is pressed
         guard let url = URL(string: "wunderlinq://") else {
